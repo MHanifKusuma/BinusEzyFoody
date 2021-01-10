@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drinks_icon" />
+
+    <TextView
+        android:id="@+id/drinksName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="drinksName"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/drinksPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="drinksPrice"
+        app:layout_constraintBottom_toTopOf="@id/stockTxt"
+        app:layout_constraintEnd_toEndOf="@+id/drinksName"
+        app:layout_constraintStart_toStartOf="@+id/drinksName"
+        app:layout_constraintTop_toBottomOf="@+id/drinksName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"></LinearLayout>
+
+    <TextView
+        android:id="@+id/stockTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="drinksStock"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/drinksPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
